@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Fake ecommerce shop page" />
+  <meta charset="utf-8">
+  <title>Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="davethemac">
+</head>
+
+<body>
+  
+<div class="container">
+  <p>Hello Shop</p>
+  <iframe id="gateway-frame" src="https://expressjs.com/"></iframe>
+</div>
+<script>
+  const doHack = () => {
+    const target = document.getElementById('gateway-frame');
+    target.src = "https://koajs.com/";
+  }
+  const timeoutID = window.setTimeout(doHack, 2*1000);
+</script>
+
+</body>
+</html>
